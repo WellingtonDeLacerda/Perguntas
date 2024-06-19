@@ -28,7 +28,7 @@ body{
 article{
     position: absolute;
     min-width:300px ;
-    max-width:480px ;
+    max-width:520px ;
     background-color: var(--Branco);
     top: 125px;
     left: 50%;
@@ -44,7 +44,7 @@ article .container{
 article h1{
     display: flex;
     font-weight: 800;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 h1 > img{
     width: 20px;
@@ -65,7 +65,7 @@ p{
     line-height: 18px;
 }
 .p1{
-    display:none ;
+    display:block ;
 }
 .p2{
     display: none;
@@ -80,6 +80,10 @@ p{
     body{
         background-image: url('../ativos/imagens/background-pattern-desktop.svg');
         background-size:contain;
+    }
+    article{
+        top: 225px;
+        align-items: center;
     }
     
 }
