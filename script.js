@@ -2,15 +2,17 @@ function clicar1() {
     let i1 = window.document.getElementsByTagName('img')[1]
     
     let pa1 = window.document.getElementsByTagName('p')[0]
-    if(pa1.style.display === 'none' || pa1.style.display === '') {
-        pa1.style.display = 'block'
-        i1.setAttribute('src','ativos/imagens/icon-minus.svg')
-    }else {
+    if(pa1.style.display === 'block' || pa1.style.display === '') {
         pa1.style.display = 'none'
         i1.setAttribute('src','ativos/imagens/icon-plus.svg')
+    }else {
+        
+        pa1.style.display = 'block'
+        i1.setAttribute('src','ativos/imagens/icon-minus.svg')
     }
     
-}
+  }
+
 function clicar2() {
     let i2 = window.document.getElementsByTagName('img')[2]
     let pa2 = window.document.getElementsByTagName('p')[1]
