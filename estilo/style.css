@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial;
+}
+
+:root{
+    /* cores */
+    --Branco:hsl(0, 0%, 100%);
+    --RosaClaro:hsl(275, 100%, 97%);
+    --RoxoAcinzentado: hsl(292, 16%, 49%);
+    --RoxoEscuro: hsl(292, 42%, 14%);
+}
+body{
+    background-image: url('../ativos/imagens/background-pattern-mobile.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    width: 99vw;
+    margin-bottom: 200px;
+    background-color: var(--RosaClaro);
+    padding: 250px 0px;
+}
+article{
+    position: absolute;
+    min-width:300px ;
+    max-width:480px ;
+    background-color: var(--Branco);
+    top: 125px;
+    left: 50%;
+    transform: translatex(-50%);
+    padding: 25px;
+    border-radius: 10px;
+   
+}
+article .container{
+    display: flex;
+    justify-content: space-between;
+}
+article h1{
+    display: flex;
+    font-weight: 800;
+    font-size: 2em;
+}
+h1 > img{
+    width: 20px;
+    margin-right: 20px;
+}
+h4{
+    padding: 20px 0px;
+    color: var(--RoxoEscuro);
+}
+h4:hover{
+    color:#c415ff ;
+}
+p{
+    font-size: 13px;
+    color: var(--RoxoAcinzentado);
+    margin: 10px 0px;
+    padding-bottom: 12px;
+    line-height: 18px;
+}
+.p1{
+    display:none ;
+}
+.p2{
+    display: none;
+}
+.p3{
+    display: none;
+}
+.p4{
+    display: none;
+}
+@media screen and (min-width:768px){
+    body{
+        background-image: url('../ativos/imagens/background-pattern-desktop.svg');
+        background-size:contain;
+    }
+    
+}
